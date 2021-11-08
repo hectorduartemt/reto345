@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Front Final</title>
+<meta charset="utf-8">
+<meta name="description" content="Este es un documento HTML5">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<link rel="stylesheet" href="misestilos.css">
+<script type="text/javascript" src="js/misFuncionesClientes.js"></script>  
+</head>
+
+<body>
+    <header id="cabeceralogo">
+    <div>
+    <h1>Clientes </h1>
+    </div>
+    </header>
+    <nav id="menuprincipal">
+    <div>
+    <ul>
+    <li><a href="menu.html">Menu Principal</a></li>
+    <li><a href="categorias.html">Category</a></li>
+    <li><a href="clientes.html">Client</a></li>
+    <li><a href="mensajes.html">Message</a></li>
+    <li><a href="reservaciones.html">Reservation</a></li>
+    <li><a href="orthesis.html">Ortopedic</a></li>
+    </ul>
+    </div>
+    </nav>
+
+    <div id="resultado3"></div>
+<script type="text/javascript"> 
+window.onload = autoInicioCliente();
+</script>
+<div>
+    <input type="text" id="Clemail" placeholder="email">
+    <input type="text" id="Clpassword" placeholder="password">
+    <input type="text" id="Clname" placeholder="nombre">
+    <input type="number" id="Clage" placeholder="edad">
+</div>
+<button onclick="guardarInformacionCliente()">Guardar Cliente</button>
+<!--Estilo de la Tabla-->
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid rgb(0, 42, 70);
+        border-collapse: collapse;
+    }
+</style>
+
+  
+</body>
+</html>
